@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Custom theme colors */
+@theme {
+  /* Primary - Teal palette */
+  --color-primary-50: #f0fdfa;
+  --color-primary-100: #ccfbf1;
+  --color-primary-200: #99f6e4;
+  --color-primary-300: #5eead4;
+  --color-primary-400: #2dd4bf;
+  --color-primary-500: #14b8a6;
+  --color-primary-600: #0d9488;
+  --color-primary-700: #0f766e;
+  --color-primary-800: #115e59;
+  --color-primary-900: #134e4a;
+
+  /* Accent - bruges til markers, success states */
+  --color-accent-50: #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-200: #a7f3d0;
+  --color-accent-300: #6ee7b7;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+  --color-accent-800: #065f46;
+  --color-accent-900: #064e3b;
+
+  /* Warning - bruges til advarsler */
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+
+  /* Danger - bruges til sletning, fejl */
+  --color-danger-50: #fef2f2;
+  --color-danger-100: #fee2e2;
+  --color-danger-500: #ef4444;
+  --color-danger-600: #dc2626;
+  --color-danger-700: #b91c1c;
+}
+
+/* Base styles */
+@layer base {
+  html, body, #root {
+    @apply w-full h-full m-0 p-0 overflow-hidden;
+  }
+
+  body {
+    @apply antialiased font-sans;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 text-white py-2 px-4 rounded-lg font-semibold
+           hover:bg-primary-700 disabled:bg-gray-300 disabled:cursor-not-allowed
+           transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 py-2 px-4 rounded-lg font-medium
+           hover:bg-gray-200 transition-colors;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 text-white py-2 px-4 rounded-lg font-semibold
+           hover:bg-accent-600 transition-colors;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg
+           focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg;
+  }
+
+  .tag-badge {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium transition-all;
+  }
+}

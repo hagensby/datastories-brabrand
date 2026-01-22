@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Data Story Map">
+  <!-- Pin -->
+  <path d="M32 4c-10 0-18 8-18 18 0 14 18 38 18 38s18-24 18-38C50 12 42 4 32 4z" fill="#0F8077"></path>
+  <!-- Inner circle -->
+  <circle cx="32" cy="22" r="7" fill="#ffffff"></circle>
+  <!-- Data dot -->
+  <circle cx="44" cy="44" r="6" fill="#ef4444"></circle>
+  <!-- Small connector -->
+  <path d="M38 36c2 2 4 4 6 6" stroke="#ef4444" stroke-width="4" stroke-linecap="round"></path>
+</svg>
