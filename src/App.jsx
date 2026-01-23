@@ -405,7 +405,7 @@ const DataStoriesMap = () => {
       <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 shadow-lg">
         <h1 className="text-2xl font-bold flex items-center gap-2">
           <MapPin size={28} />
-          Enery Encounters in Brabrand
+          Energy Encounters in Brabrand
         </h1>
       </div>
 

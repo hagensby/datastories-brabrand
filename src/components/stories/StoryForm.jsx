@@ -140,7 +140,7 @@ const StoryForm = ({
     <div className="absolute top-4 right-4 bottom-4 w-96 bg-white rounded-lg shadow-2xl flex flex-col" style={{ zIndex: 1000 }}>
       <div className="p-6 border-b flex-shrink-0 bg-primary-700">
         <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold text-white">Ny Data Story</h2>
+          <h2 className="text-xl font-bold text-white">New Data Story</h2>
           <button
             onClick={handleClose}
             className="text-white hover:text-gray-700"
