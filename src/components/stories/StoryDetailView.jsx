@@ -108,7 +108,7 @@ const StoryDetailView = ({
       });
 
       formData.documentFiles.forEach(file => {
-        submitFormData.append('documents', file);
+        submitFormData.append('textfiles', file);
       });
 
       console.log('Updating story with files...');

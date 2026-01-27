@@ -101,7 +101,7 @@ const StoryForm = ({
       });
 
       formData.documentFiles.forEach(file => {
-        submitFormData.append('documents', file);
+        submitFormData.append('textfiles', file);
       });
 
       console.log('Creating story with files...');
